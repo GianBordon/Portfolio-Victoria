@@ -8,13 +8,13 @@ Bienvenido/a al portafolio minimalista y moderno de **Victoria Provisionato Zitt
 
 ## 🚀 Demo
 
-> **[Ver el sitio en producción](https://tu-link-en-netlify.com)**
+> **[Ver el sitio en producción](https://porfoliovictoriazitta.netlify.app/)**
 
 ---
 
 ## 🖼️ Preview
 
-![Preview de la Home](assets/img/foto7.jpg)
+![Preview de la Home](assets/img/preview.png)
 
 ---
 
