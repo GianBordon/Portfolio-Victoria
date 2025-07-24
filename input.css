@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
+@plugin "flowbite/plugin";
+
+@font-face{
+    font-family: 'LobsterTow';
+    src: url(assets/fonts/LobsterTwo-Italic.woff2) format('woff2');
+    font-style: italic;
+    font-size: 400;
+    font-display: swap;
+}
+
+@theme{
+    --color-hola: #40f;
+    --font-lobster: 'LobsterTow', sans-serif
+}   
