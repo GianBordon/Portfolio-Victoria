@@ -39,6 +39,8 @@ Bienvenido/a al portafolio minimalista y moderno de **Victoria Provisionato Zitt
 ├── index.html
 ├── input.css
 ├── output.css
+├── scripts/
+│   └── convert-to-webp.mjs
 ├── package.json
 ├── tailwind.config.js
 └── README.md
