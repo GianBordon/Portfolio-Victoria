@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>Victoria Provisionato Zitta</title>
+    <meta name="description" content="Portfolio de Victoria Provisionato Zitta, Fashion Stylist. Estilismo, editoriales y trabajos destacados.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://porfoliovictoriazitta.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Victoria Provisionato Zitta · Fashion Stylist">
+    <meta property="og:description" content="Portfolio de estilismo de Victoria Provisionato Zitta: editoriales y producciones.">
+    <meta property="og:url" content="https://porfoliovictoriazitta.netlify.app/">
+    <meta property="og:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Victoria Provisionato Zitta · Fashion Stylist">
+    <meta name="twitter:description" content="Portfolio de estilismo: editoriales y producciones.">
+    <meta name="twitter:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
+</head>
+<body class="bg-white text-black min-h-screen flex flex-col">
+	<!-- Preloader -->
+	<div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center transition-opacity duration-300">
+		<div class="h-12 w-12 rounded-full border-2 border-black/20 border-t-black animate-spin"></div>
+	</div>
+    <!-- Header  -->
+    <header class="w-full border-b border-black/10 animate-slide-down">
+        <div class="max-w-3xl mx-auto flex flex-col items-center py-8">
+            <a href="index.html" class="text-center">
+                <h1 class="text-4xl font-playfair font-bold">Victoria Provisionato Zitta</h1>
+                <h2 class="text-lg font-playfair font-light tracking-wide">Fashion Stylists</h2>
+            </a>
+			<div class="mt-6 text-center text-base flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-6">
+				<p > <a href="/index.html" class="underline hover:font-bold">Estilismo</a></p>
+				<p > <a href="/editorial.html"  class="underline hover:font-bold">Editorial</a></p>
+				<p > <a href="/ecommerce.html" class="underline hover:font-bold">Ecommerce</a></p>
+			</div>
+			<div class="mt-6 text-center text-base flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-6">
+				<p><span class="font-semibold">Mail:</span> <a href="mailto:victoriaprovzitta@gmail.com" class="underline hover:font-bold">victoriaprovzitta@gmail.com</a></p>
+				<p><span class="font-semibold">Instagram:</span> <a href="https://instagram.com/victoriaa.p.zitta" target="_blank" class="underline hover:font-bold">@victoriaa.p.zitta</a></p>
+				<p><span class="font-semibold">Teléfono:</span> +34 614 350 871</p>
+			</div>
+        </div>
+    </header>
+    <!-- Galería principal  -->
+    <main class="flex-1">
+		<div class="gallery max-w-6xl mx-auto py-12 px-4 grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4 sm:gap-6 lg:gap-8">
+			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
+				<picture>
+					<source type="image/webp" srcset="assets/img/Foto1.webp" />
+					<img src="assets/img/Foto1.jpg" alt="Foto 1" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+				</picture>
+			</figure>
+			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
+				<picture>
+					<source type="image/webp" srcset="assets/img/foto2.webp" />
+					<img src="assets/img/foto2.jpg" alt="Foto 2" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+				</picture>
+			</figure>
+			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
+				<picture>
+					<source type="image/webp" srcset="assets/img/foto3.webp" />
+					<img src="assets/img/foto3.jpg" alt="Foto 3" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+				</picture>
+			</figure>
+			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
+				<picture>
+					<source type="image/webp" srcset="assets/img/foto4.webp" />
+					<img src="assets/img/foto4.jpg" alt="Foto 4" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+				</picture>
+			</figure>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-black/10 py-6 mt-8 animate-slide-up">
+        <div class="text-center text-sm text-black/60">
+            <a href="https://github.com/GianBordon" target="_blank" class="hover:underline">@gianbordon</a> · 2025
+        </div>
+    </footer>
+	<!-- Lightbox -->
+	<div id="lightbox" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4">
+		<img id="lightbox-img" class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl" alt="Imagen ampliada" />
+	</div>
+	<!-- Scripts -->
+	<script>
+		// Preloader fade-out
+		window.addEventListener('load', () => {
+			const preloader = document.getElementById('preloader');
+			if (!preloader) return;
+			preloader.classList.add('opacity-0');
+			setTimeout(() => preloader.remove(), 300);
+		});
+
+		// Reveal on scroll
+		const revealObserver = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('animate-fade-in');
+					revealObserver.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.1 });
+		document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+
+		// Simple lightbox
+		const overlay = document.getElementById('lightbox');
+		const overlayImg = document.getElementById('lightbox-img');
+		document.querySelectorAll('.gallery img').forEach((img) => {
+			img.addEventListener('click', () => {
+				overlayImg.src = img.src;
+				overlay.classList.remove('hidden');
+				overlay.classList.add('flex');
+			});
+		});
+		overlay.addEventListener('click', () => {
+			overlay.classList.add('hidden');
+			overlay.classList.remove('flex');
+			overlayImg.src = '';
+		});
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && !overlay.classList.contains('hidden')) overlay.click();
+		});
+	</script>
+</body>
+</html>
