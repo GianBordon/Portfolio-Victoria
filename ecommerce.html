@@ -46,42 +46,8 @@
     <!-- Galería principal  -->
     <main class="flex-1">
 		<div class="gallery max-w-6xl mx-auto py-12 px-4 grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4 sm:gap-6 lg:gap-8">
-			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
-			<picture>
-				<source type="image/webp" srcset="assets/img/foto38.webp" />
-				<img src="assets/img/foto38.jpg" alt="Foto 38" loading="lazy" decoding="async"
-					class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-			</picture>
-			</figure>
-			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
-			<picture>
-				<source type="image/webp" srcset="assets/img/foto39.webp" />
-				<img src="assets/img/foto39.jpg" alt="Foto 39" loading="lazy" decoding="async"
-					class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-			</picture>
-			</figure>
-			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
-			<picture>
-				<source type="image/webp" srcset="assets/img/foto40.webp" />
-				<img src="assets/img/foto40.jpg" alt="Foto 40" loading="lazy" decoding="async"
-					class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-			</picture>
-			</figure>
-			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
-			<picture>
-				<source type="image/webp" srcset="assets/img/foto41.webp" />
-				<img src="assets/img/foto41.jpg" alt="Foto 41" loading="lazy" decoding="async"
-					class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-			</picture>
-			</figure>
-			<figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
-			<picture>
-				<source type="image/webp" srcset="assets/img/foto42.webp" />
-				<img src="assets/img/foto42.jpg" alt="Foto 42" loading="lazy" decoding="async"
-					class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-			</picture>
-			</figure>
-        </div>
+			<!-- Las imágenes se generan dinámicamente con JS -->
+		</div>
     </main>
     <!-- Footer -->
     <footer class="w-full border-t border-black/10 py-6 mt-8 animate-slide-up">
@@ -94,6 +60,7 @@
 		<img id="lightbox-img" class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl" alt="Imagen ampliada" />
 	</div>
 	<!-- Scripts -->
+	<script src="js/gallery.js"></script>
 	<script>
 		// Preloader fade-out
 		window.addEventListener('load', () => {
@@ -103,32 +70,25 @@
 			setTimeout(() => preloader.remove(), 300);
 		});
 
-		// Reveal on scroll
-		const revealObserver = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					entry.target.classList.add('animate-fade-in');
-					revealObserver.unobserve(entry.target);
-				}
-			});
-		}, { threshold: 0.1 });
-		document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
-
-		// Simple lightbox
+		// Simple lightbox con event delegation para imágenes generadas dinámicamente
 		const overlay = document.getElementById('lightbox');
 		const overlayImg = document.getElementById('lightbox-img');
-		document.querySelectorAll('.gallery img').forEach((img) => {
-			img.addEventListener('click', () => {
-				overlayImg.src = img.src;
+		
+		// Usar event delegation para que funcione con imágenes generadas dinámicamente
+		document.querySelector('.gallery').addEventListener('click', (e) => {
+			if (e.target.tagName === 'IMG') {
+				overlayImg.src = e.target.src;
 				overlay.classList.remove('hidden');
 				overlay.classList.add('flex');
-			});
+			}
 		});
+		
 		overlay.addEventListener('click', () => {
 			overlay.classList.add('hidden');
 			overlay.classList.remove('flex');
 			overlayImg.src = '';
 		});
+		
 		document.addEventListener('keydown', (e) => {
 			if (e.key === 'Escape' && !overlay.classList.contains('hidden')) overlay.click();
 		});
