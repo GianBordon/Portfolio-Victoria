@@ -120,7 +120,7 @@ Si deseas ejecutar este proyecto localmente:
 
 ---
 
-## 👨‍� **Créditos**
+## 👨‍ **Créditos**
 
 -   **Desarrollo:** [@gianbordon](https://github.com/GianBordon)
 -   **Cliente:** Victoria Provisionato Zitta
