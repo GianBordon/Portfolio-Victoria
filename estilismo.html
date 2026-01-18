@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>Estilismo - Victoria Provisionato Zitta</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Estilismo - Portfolio de Victoria Provisionato Zitta, Fashion Stylist.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://porfoliovictoriazitta.netlify.app/estilismo.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Estilismo - Victoria Provisionato Zitta">
+    <meta property="og:description" content="Trabajos de estilismo de Victoria Provisionato Zitta.">
+    <meta property="og:url" content="https://porfoliovictoriazitta.netlify.app/estilismo.html">
+    <meta property="og:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estilismo - Victoria Provisionato Zitta">
+    <meta name="twitter:description" content="Trabajos de estilismo de Victoria Provisionato Zitta.">
+    <meta name="twitter:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white text-black">
+
+    <!-- Navbar Transparente (No fijo) -->
+    <nav class="w-full bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Botón Hamburguesa (Mobile/Tablet) -->
+            <button id="menu-toggle" class="md:hidden text-black focus:outline-none z-50">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Logo Centrado (Mobile/Tablet) / Derecha (Desktop) -->
+            <div
+                class="md:order-2 absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none">
+                <a href="home.html"
+                    class="text-black text-2xl md:text-3xl font-playfair font-bold tracking-wider uppercase transition-colors duration-300 hover:text-[#ff1493]">VPZ</a>
+            </div>
+
+            <!-- Navegación Desktop -->
+            <ul class="hidden md:flex items-center gap-6 md:gap-10">
+                <li>
+                    <a href="estilismo.html"
+                        class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">ESTILISMO</a>
+                </li>
+                <li>
+                    <a href="editorial.html"
+                        class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">EDITORIAL</a>
+                </li>
+                <li>
+                    <a href="ecommerce.html"
+                        class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">ECOMMERCE</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Menú Mobile/Tablet Fullscreen -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-black z-40 flex items-center justify-center transform translate-x-full transition-transform duration-300 ease-in-out">
+        <ul class="flex flex-col items-center gap-8">
+            <li>
+                <a href="estilismo.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">ESTILISMO</a>
+            </li>
+            <li>
+                <a href="editorial.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">EDITORIAL</a>
+            </li>
+            <li>
+                <a href="ecommerce.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">ECOMMERCE</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Galería de Imágenes -->
+    <main class="max-w-7xl mx-auto px-6 py-12 mb-24">
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <!-- Las imágenes se cargan dinámicamente con JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-black py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10">
+                <li>
+                    <a href="https://instagram.com/victoriaa.p.zitta" target="_blank"
+                        class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">INSTAGRAM</a>
+                </li>
+                <li>
+                    <a href="contact.html"
+                        class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="mailto:victoriaprovzitta@gmail.com"
+                        class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">MAIL</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4">
+        <button id="close-lightbox" class="absolute top-6 right-6 text-white hover:text-[#ff1493] transition-colors">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <img id="lightbox-img" class="max-w-full max-h-[90vh] object-contain" alt="Imagen ampliada">
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Menú hamburguesa
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.contains('translate-x-0');
+
+            if (isOpen) {
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                document.body.style.overflow = '';
+
+                // Volver a negro al cerrar
+                menuToggle.classList.remove('text-white');
+                menuToggle.classList.add('text-black');
+            } else {
+                mobileMenu.classList.remove('translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+
+                // Cambiar a blanco al abrir
+                menuToggle.classList.remove('text-black');
+                menuToggle.classList.add('text-white');
+            }
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                document.body.style.overflow = '';
+
+                // Volver a negro al cerrar
+                menuToggle.classList.remove('text-white');
+                menuToggle.classList.add('text-black');
+            });
+        });
+
+        // Cargar imágenes desde JSON
+        async function loadGallery() {
+            try {
+                const response = await fetch('data/images.json');
+                const data = await response.json();
+                const images = data.estilismo; // Cambio a "estilismo"
+                const gallery = document.getElementById('gallery');
+
+                images.forEach(imageName => {
+                    // Manejar tanto strings como objetos
+                    let baseName, extension = 'jpg';
+                    if (typeof imageName === 'string') {
+                        baseName = imageName;
+                    } else if (typeof imageName === 'object' && imageName.name) {
+                        baseName = imageName.name;
+                        extension = imageName.extension || 'jpg';
+                    }
+
+                    const webpPath = `assets/img/${baseName}.webp`;
+                    const fallbackPath = `assets/img/${baseName}.${extension}`;
+
+                    // Crear elemento de imagen
+                    const imageContainer = document.createElement('div');
+                    imageContainer.className = 'group relative overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105';
+
+                    imageContainer.innerHTML = `
+                        <picture>
+                            <source type="image/webp" srcset="${webpPath}" />
+                            <img src="${fallbackPath}" 
+                                 alt="${baseName}" 
+                                 loading="lazy" 
+                                 decoding="async"
+                                 class="w-full h-auto object-cover aspect-[3/4]" />
+                        </picture>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                    `;
+
+                    // Click para abrir lightbox
+                    imageContainer.addEventListener('click', () => {
+                        openLightbox(fallbackPath);
+                    });
+
+                    gallery.appendChild(imageContainer);
+                });
+            } catch (error) {
+                console.error('Error al cargar las imágenes:', error);
+            }
+        }
+
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeLightbox = document.getElementById('close-lightbox');
+
+        function openLightbox(imageSrc) {
+            lightboxImg.src = imageSrc;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightboxFunc() {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            lightboxImg.src = '';
+            document.body.style.overflow = '';
+        }
+
+        closeLightbox.addEventListener('click', closeLightboxFunc);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightboxFunc();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                closeLightboxFunc();
+            }
+        });
+
+        // Cargar galería al cargar la página
+        document.addEventListener('DOMContentLoaded', loadGallery);
+    </script>
+
+</body>
+
+</html>
