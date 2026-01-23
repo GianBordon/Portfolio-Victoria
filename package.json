@@ -7,7 +7,7 @@
     "images:webp": "node ./scripts/convert-to-webp.mjs",
     "optimize": "node scripts/optimize-images.js",
     "cleanup-check": "node scripts/cleanup-check.js",
-    "build": "npm run optimize && next build"
+    "build": "echo 'Static site - no build needed'"
   },
   "author": "",
   "license": "ISC",
