@@ -25,32 +25,40 @@ class Gallery {
   }
 
   /**
-   * Genera el HTML de una imagen individual
+   * Genera el HTML de una imagen individual con imágenes optimizadas
    */
   createImageHTML(imageData) {
     // Manejar tanto strings simples como objetos con configuración
-    let baseName, extension = 'jpg';
+    let baseName, sizes = [400, 800, 1600];
     
     if (typeof imageData === 'string') {
       baseName = imageData;
     } else if (typeof imageData === 'object' && imageData.name) {
       baseName = imageData.name;
-      extension = imageData.extension || 'jpg';
+      sizes = imageData.sizes || [400, 800, 1600];
     } else {
       console.warn('Formato de imagen no válido:', imageData);
       return '';
     }
 
-    const webpPath = `assets/img/${baseName}.webp`;
-    const fallbackPath = `assets/img/${baseName}.${extension}`;
+    const basePath = `public/images/optimized/${this.sectionName}/${baseName}`;
+    const srcSet = sizes.map(size => `${basePath}-${size}w.webp ${size}w`).join(', ');
+    const defaultSrc = `${basePath}-800w.webp`;
     
     return `
       <figure class="group relative overflow-hidden rounded-lg shadow" data-reveal>
-        <picture>
-          <source type="image/webp" srcset="${webpPath}" />
-          <img src="${fallbackPath}" alt="${baseName}" loading="lazy" decoding="async"
-            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-        </picture>
+        <div class="relative bg-gray-200">
+          <img 
+            src="${defaultSrc}" 
+            srcset="${srcSet}"
+            sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1600px"
+            alt="${baseName}" 
+            loading="lazy" 
+            decoding="async"
+            class="h-full w-full object-cover transition-all duration-300 group-hover:scale-105 opacity-0"
+            onload="this.classList.remove('opacity-0'); this.classList.add('opacity-100')"
+          />
+        </div>
       </figure>
     `;
   }

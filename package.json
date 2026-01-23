@@ -4,7 +4,10 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build:styles": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
-    "images:webp": "node ./scripts/convert-to-webp.mjs"
+    "images:webp": "node ./scripts/convert-to-webp.mjs",
+    "optimize": "node scripts/optimize-images.js",
+    "cleanup-check": "node scripts/cleanup-check.js",
+    "build": "npm run optimize && next build"
   },
   "author": "",
   "license": "ISC",
@@ -15,8 +18,6 @@
     "flowbite": "^3.1.2"
   },
   "devDependencies": {
-    "tailwindcss": "^4.1.11",
-    "fast-glob": "^3.3.2",
-    "sharp": "^0.33.4"
+    "sharp": "^0.33.0"
   }
 }
