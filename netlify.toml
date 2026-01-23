@@ -1,5 +1,5 @@
 [build]
-  publish = "out"
+  publish = "."
   command = "npm run build"
 
 [[plugins]]
@@ -9,7 +9,7 @@
   NODE_VERSION = "18"
 
 [[headers]]
-  for = "/images/optimized/*"
+  for = "/public/images/optimized/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
