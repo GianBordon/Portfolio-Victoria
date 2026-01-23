@@ -2,9 +2,6 @@
   publish = "."
   command = "npm run build"
 
-[[plugins]]
-  package = "@netlify/plugin-image-cdn"
-
 [build.environment]
   NODE_VERSION = "18"
 
