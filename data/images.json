@@ -77,5 +77,21 @@
     { "name": "foto40", "sizes": [400, 800, 1600] },
     { "name": "foto41", "sizes": [400, 800, 1600] },
     { "name": "foto42", "sizes": [400, 800, 1600] }
+  ],
+  "backstage": [
+    { "name": "foto81", "sizes": [400, 800, 1600] },
+    { "name": "foto82", "sizes": [400, 800, 1600] },
+    { "name": "foto83", "sizes": [400, 800, 1600] },
+    { "name": "foto84", "sizes": [400, 800, 1600] },
+    { "name": "foto85", "sizes": [400, 800, 1600] },
+    { "name": "foto86", "sizes": [400, 800, 1600] },
+    { "name": "foto87", "sizes": [400, 800, 1600] },
+    { "name": "foto88", "sizes": [400, 800, 1600] },
+    { "name": "foto89", "sizes": [400, 800, 1600] },
+    { "name": "foto90", "sizes": [400, 800, 1600] },
+    { "name": "foto91", "sizes": [400, 800, 1600] },
+    { "name": "foto92", "sizes": [400, 800, 1600] },
+    { "name": "foto93", "sizes": [400, 800, 1600] },
+    { "name": "foto94", "sizes": [400, 800, 1600] }
   ]
 }

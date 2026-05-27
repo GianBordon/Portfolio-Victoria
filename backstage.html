@@ -6,24 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="output.css">
 	<link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-	<title>Ecommerce - Victoria Provisionato Zitta</title>
+	<title>Editorial - Victoria Provisionato Zitta</title>
 
 	<!-- SEO Meta Tags -->
-	<meta name="description" content="Ecommerce - Portfolio de Victoria Provisionato Zitta, Fashion Stylist.">
+	<meta name="description" content="Editorial - Portfolio de Victoria Provisionato Zitta, Fashion Stylist.">
 	<meta name="robots" content="index,follow">
-	<link rel="canonical" href="https://porfoliovictoriazitta.netlify.app/ecommerce.html">
+	<link rel="canonical" href="https://porfoliovictoriazitta.netlify.app/editorial.html">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Ecommerce - Victoria Provisionato Zitta">
-	<meta property="og:description" content="Trabajos de ecommerce de Victoria Provisionato Zitta.">
-	<meta property="og:url" content="https://porfoliovictoriazitta.netlify.app/ecommerce.html">
+	<meta property="og:title" content="Editorial - Victoria Provisionato Zitta">
+	<meta property="og:description" content="Trabajos editoriales de Victoria Provisionato Zitta.">
+	<meta property="og:url" content="https://porfoliovictoriazitta.netlify.app/editorial.html">
 	<meta property="og:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Ecommerce - Victoria Provisionato Zitta">
-	<meta name="twitter:description" content="Trabajos de ecommerce de Victoria Provisionato Zitta.">
+	<meta name="twitter:title" content="Editorial - Victoria Provisionato Zitta">
+	<meta name="twitter:description" content="Trabajos editoriales de Victoria Provisionato Zitta.">
 	<meta name="twitter:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
 
 	<!-- Google Fonts -->
@@ -86,7 +86,7 @@
 		<ul class="flex flex-col items-center gap-8">
 			<li>
 				<a href="estilismo.html"
-					class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">ESTILISMO</a>
+					class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">STYLING</a>
 			</li>
 			<li>
 				<a href="editorial.html"
@@ -194,7 +194,7 @@
 			try {
 				const response = await fetch('data/images.json');
 				const data = await response.json();
-				const images = data.ecommerce; // Cambio a "ecommerce"
+				const images = data.backstage; // Cambio a "backstage"
 				const gallery = document.getElementById('gallery');
 
 				images.forEach(imageName => {
@@ -217,6 +217,7 @@
 					imageContainer.innerHTML = `
                         <picture>
                             <source type="image/webp" srcset="${webpPath}" />
+                            <source type="image/jpeg" srcset="${fallbackPath}" />
                             <img src="${fallbackPath}" 
                                  alt="${baseName}" 
                                  loading="lazy" 
@@ -228,7 +229,8 @@
 
 					// Click para abrir lightbox
 					imageContainer.addEventListener('click', () => {
-						openLightbox(fallbackPath);
+						const currentImg = imageContainer.querySelector('img');
+						openLightbox(currentImg.currentSrc || fallbackPath);
 					});
 
 					gallery.appendChild(imageContainer);

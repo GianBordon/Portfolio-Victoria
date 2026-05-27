@@ -116,6 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
     sectionName = 'editorial';
   } else if (currentPage === 'ecommerce.html') {
     sectionName = 'ecommerce';
+  } else if (currentPage === 'backstage.html') {
+    sectionName = 'backstage';
   }
 
   // Crear e inicializar la galería
