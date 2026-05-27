@@ -1,5 +1,10 @@
 {
   "estilismo": [
+    { "name": "foto76", "sizes": [400, 800, 1600] },
+    { "name": "foto77", "sizes": [400, 800, 1600] },
+    { "name": "foto78", "sizes": [400, 800, 1600] },
+    { "name": "foto79", "sizes": [400, 800, 1600] },
+    { "name": "foto80", "sizes": [400, 800, 1600] },
     { "name": "foto58", "sizes": [400, 800, 1600] },
     { "name": "foto65", "sizes": [400, 800, 1600] },
     { "name": "foto73", "sizes": [400, 800, 1600] },
