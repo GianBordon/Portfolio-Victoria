@@ -92,6 +92,16 @@
     { "name": "foto91", "sizes": [400, 800, 1600] },
     { "name": "foto92", "sizes": [400, 800, 1600] },
     { "name": "foto93", "sizes": [400, 800, 1600] },
-    { "name": "foto94", "sizes": [400, 800, 1600] }
+    { "name": "foto94", "sizes": [400, 800, 1600] },
+    { "name": "foto95", "sizes": [400, 800, 1600] },
+    { "name": "foto96", "sizes": [400, 800, 1600] },
+    { "name": "foto97", "sizes": [400, 800, 1600] },
+    { "name": "foto98", "sizes": [400, 800, 1600] },
+    { "name": "foto99", "sizes": [400, 800, 1600] },
+    { "name": "foto100", "sizes": [400, 800, 1600] },
+    { "name": "foto101", "sizes": [400, 800, 1600] },
+    { "name": "foto102", "sizes": [400, 800, 1600] },
+    { "name": "foto103", "sizes": [400, 800, 1600] },
+    { "name": "foto104", "sizes": [400, 800, 1600] }
   ]
 }
