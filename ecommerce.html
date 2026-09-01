@@ -2,277 +2,147 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="output.css">
-	<link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-	<title>Ecommerce - Victoria Provisionato Zitta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="theme-color" content="#f9f9f9">
+    <title>E-Commerce - Victoria Provisionato Zitta</title>
 
-	<!-- SEO Meta Tags -->
-	<meta name="description" content="Ecommerce - Portfolio de Victoria Provisionato Zitta, Fashion Stylist.">
-	<meta name="robots" content="index,follow">
-	<link rel="canonical" href="https://porfoliovictoriazitta.netlify.app/ecommerce.html">
+    <meta name="description" content="Trabajos de e-commerce y estilismo comercial de Victoria Provisionato Zitta, Fashion Stylist.">
+    <meta name="author" content="Victoria Provisionato Zitta">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://porfoliovictoriazitta.netlify.app/ecommerce.html">
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Ecommerce - Victoria Provisionato Zitta">
-	<meta property="og:description" content="Trabajos de ecommerce de Victoria Provisionato Zitta.">
-	<meta property="og:url" content="https://porfoliovictoriazitta.netlify.app/ecommerce.html">
-	<meta property="og:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Victoria Provisionato Zitta">
+    <meta property="og:title" content="E-Commerce - Victoria Provisionato Zitta">
+    <meta property="og:description" content="Portfolio de e-commerce de Victoria Provisionato Zitta.">
+    <meta property="og:url" content="https://porfoliovictoriazitta.netlify.app/ecommerce.html">
+    <meta property="og:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
 
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Ecommerce - Victoria Provisionato Zitta">
-	<meta name="twitter:description" content="Trabajos de ecommerce de Victoria Provisionato Zitta.">
-	<meta name="twitter:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="E-Commerce - Victoria Provisionato Zitta">
+    <meta name="twitter:description" content="Portfolio de e-commerce de Victoria Provisionato Zitta.">
+    <meta name="twitter:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
-		rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://porfoliovictoriazitta.netlify.app/" },
+            { "@type": "ListItem", "position": 2, "name": "E-Commerce", "item": "https://porfoliovictoriazitta.netlify.app/ecommerce.html" }
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="bg-white text-black">
+<body class="category-page bg-background text-primary antialiased min-h-screen flex flex-col overflow-x-hidden">
 
-	<!-- Navbar Transparente (No fijo) -->
-	<nav class="w-full bg-transparent">
-		<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Navbar -->
+    <nav class="w-full sticky top-0 z-50 bg-background border-b border-primary">
+        <div class="flex justify-between items-center px-6 md:px-20 py-6">
+            <a href="home.html"
+                class="font-bodoni text-xl md:text-2xl tracking-tighter text-primary">VICTORIA ZITTA</a>
 
-			<!-- Botón Hamburguesa (Mobile/Tablet) -->
-			<button id="menu-toggle" class="lg:hidden text-black focus:outline-none z-50">
-				<svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-					</path>
-				</svg>
-				<svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-					</path>
-				</svg>
-			</button>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="estilismo.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">STYLING</a>
+                <a href="editorial.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">EDITORIAL</a>
+                <a href="ecommerce.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-primary border-b-2 border-primary pb-1">E-COMMERCE</a>
+                <a href="backstage.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">BACKSTAGE</a>
+            </div>
 
-			<!-- Logo Centrado (Mobile/Tablet) / Derecha (Desktop) -->
-			<div
-				class="lg:order-2 absolute left-1/2 transform -translate-x-1/2 lg:relative lg:left-0 lg:transform-none">
-				<a href="home.html"
-					class="text-black text-2xl md:text-3xl font-playfair font-bold tracking-wider uppercase transition-colors duration-300 hover:text-[#ff1493] whitespace-nowrap">Victoria
-					Zitta</a>
-			</div>
+            <div class="hidden md:block">
+                <a href="contact.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-primary hover:opacity-70 transition-opacity">CONTACT</a>
+            </div>
 
-			<!-- Navegación Desktop -->
-			<ul class="hidden lg:flex items-center gap-6 md:gap-10">
-				<li>
-					<a href="estilismo.html"
-						class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">STYLING</a>
-				</li>
-				<li>
-					<a href="editorial.html"
-						class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">EDITORIAL</a>
-				</li>
-				<li>
-					<a href="ecommerce.html"
-						class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">E-COMMERCE</a>
-				</li>
-				<li>
-					<a href="backstage.html"
-						class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">BACKSTAGE</a>
-				</li>
-			</ul>
+            <button id="menu-toggle" class="md:hidden text-primary focus:outline-none z-50">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
 
-		</div>
-	</nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-ink-black z-40 flex items-center justify-center transform translate-x-full transition-transform duration-300 ease-in-out">
+        <ul class="flex flex-col items-center gap-8">
+            <li><a href="estilismo.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">STYLING</a></li>
+            <li><a href="editorial.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">EDITORIAL</a></li>
+            <li><a href="ecommerce.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">E-COMMERCE</a></li>
+            <li><a href="backstage.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">BACKSTAGE</a></li>
+            <li><a href="contact.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">CONTACT</a></li>
+        </ul>
+    </div>
 
-	<!-- Menú Mobile/Tablet Fullscreen -->
-	<div id="mobile-menu"
-		class="fixed inset-0 bg-black z-40 flex items-center justify-center transform translate-x-full transition-transform duration-300 ease-in-out">
-		<ul class="flex flex-col items-center gap-8">
-			<li>
-				<a href="estilismo.html"
-					class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">ESTILISMO</a>
-			</li>
-			<li>
-				<a href="editorial.html"
-					class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">EDITORIAL</a>
-			</li>
-			<li>
-				<a href="ecommerce.html"
-					class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">E-COMMERCE</a>
-			</li>
-			<li>
-				<a href="backstage.html"
-					class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">BACKSTAGE</a>
-			</li>
-		</ul>
-	</div>
+    <main class="flex-grow w-full">
 
-	<!-- Galería de Imágenes -->
-	<main class="max-w-7xl mx-auto px-6 py-12 mb-24">
-		<div id="gallery" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-			<!-- Las imágenes se cargan dinámicamente con JavaScript -->
-		</div>
-	</main>
+        <!-- Hero Section -->
+        <section class="px-6 md:px-20 pt-8 md:pt-12 pb-section-gap">
+            <h1 class="font-bodoni text-center text-display-lg-mobile md:text-display-lg leading-[110%] tracking-tighter uppercase text-primary mb-8">E-Commerce</h1>
 
-	<!-- Footer -->
-	<footer class="w-full bg-black py-6 mt-12">
-		<div class="max-w-7xl mx-auto px-6">
-			<ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10">
-				<li>
-					<a href="https://instagram.com/victoriaa.p.zitta" target="_blank"
-						class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">INSTAGRAM</a>
-				</li>
-				<li>
-					<a href="contact.html"
-						class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">CONTACTO</a>
-				</li>
-				<li>
-					<a href="mailto:victoriaprovzitta@gmail.com"
-						class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">MAIL</a>
-				</li>
-			</ul>
-		</div>
-	</footer>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:mt-16">
+                <div class="md:col-span-10 md:col-start-2">
+                    <div id="project-cards" data-category="ecommerce"
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<!-- Lightbox Modal -->
-	<div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4">
-		<button id="close-lightbox" class="absolute top-6 right-6 text-white hover:text-[#ff1493] transition-colors">
-			<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-			</svg>
-		</button>
-		<img id="lightbox-img" class="max-w-full max-h-[90vh] object-contain" alt="Imagen ampliada">
-	</div>
+        <!-- CTA Banner -->
+        <section class="w-full bg-editorial-cream border-t border-primary px-6 md:px-20 py-24">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+                <h2 class="font-bodoni text-3xl md:text-5xl text-primary mb-8">¿TIENES UN PROYECTO?</h2>
+                <a href="contact.html"
+                    class="bg-ink-black text-white text-nav-link font-semibold uppercase tracking-widest px-10 py-4 border border-ink-black hover:bg-transparent hover:text-ink-black transition-colors duration-300">
+                    CONTACTO
+                </a>
+            </div>
+        </section>
 
-	<!-- JavaScript -->
-	<script>
-		// Menú hamburguesa
-		const menuToggle = document.getElementById('menu-toggle');
-		const mobileMenu = document.getElementById('mobile-menu');
-		const hamburgerIcon = document.getElementById('hamburger-icon');
-		const closeIcon = document.getElementById('close-icon');
-		const menuLinks = document.querySelectorAll('.menu-link');
+    </main>
 
-		menuToggle.addEventListener('click', () => {
-			const isOpen = mobileMenu.classList.contains('translate-x-0');
+    <!-- Footer -->
+    <footer class="w-full bg-editorial-cream border-t border-primary px-6 md:px-20 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-6">
+            <div class="font-bodoni text-2xl text-primary">VICTORIA ZITTA</div>
+            <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                <a href="https://instagram.com/victoriaa.p.zitta" target="_blank"
+                    class="text-label-caps font-bold uppercase tracking-[0.2em] text-secondary hover:tracking-widest transition-all duration-500">INSTAGRAM</a>
+                <a href="contact.html"
+                    class="text-label-caps font-bold uppercase tracking-[0.2em] text-secondary hover:tracking-widest transition-all duration-500">CONTACT</a>
+                <a href="mailto:victoriaprovzitta@gmail.com"
+                    class="text-label-caps font-bold uppercase tracking-[0.2em] text-secondary hover:tracking-widest transition-all duration-500">MAIL</a>
+            </div>
+            <div class="text-sm text-primary mt-4 md:mt-0">
+                &copy; 2026 VICTORIA ZITTA. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
 
-			if (isOpen) {
-				mobileMenu.classList.remove('translate-x-0');
-				mobileMenu.classList.add('translate-x-full');
-				hamburgerIcon.classList.remove('hidden');
-				closeIcon.classList.add('hidden');
-				document.body.style.overflow = '';
-
-				// Volver a negro al cerrar
-				menuToggle.classList.remove('text-white');
-				menuToggle.classList.add('text-black');
-			} else {
-				mobileMenu.classList.remove('translate-x-full');
-				mobileMenu.classList.add('translate-x-0');
-				hamburgerIcon.classList.add('hidden');
-				closeIcon.classList.remove('hidden');
-				document.body.style.overflow = 'hidden';
-
-				// Cambiar a blanco al abrir
-				menuToggle.classList.remove('text-black');
-				menuToggle.classList.add('text-white');
-			}
-		});
-
-		menuLinks.forEach(link => {
-			link.addEventListener('click', () => {
-				mobileMenu.classList.remove('translate-x-0');
-				mobileMenu.classList.add('translate-x-full');
-				hamburgerIcon.classList.remove('hidden');
-				closeIcon.classList.add('hidden');
-				document.body.style.overflow = '';
-
-				// Volver a negro al cerrar
-				menuToggle.classList.remove('text-white');
-				menuToggle.classList.add('text-black');
-			});
-		});
-
-		// Cargar imágenes desde JSON
-		async function loadGallery() {
-			try {
-				const response = await fetch('data/images.json');
-				const data = await response.json();
-				const images = data.ecommerce; // Cambio a "ecommerce"
-				const gallery = document.getElementById('gallery');
-
-				images.forEach(imageName => {
-					// Manejar tanto strings como objetos
-					let baseName, extension = 'jpg';
-					if (typeof imageName === 'string') {
-						baseName = imageName;
-					} else if (typeof imageName === 'object' && imageName.name) {
-						baseName = imageName.name;
-						extension = imageName.extension || 'jpg';
-					}
-
-					const webpPath = `assets/img/${baseName}.webp`;
-					const fallbackPath = `assets/img/${baseName}.${extension}`;
-
-					// Crear elemento de imagen
-					const imageContainer = document.createElement('div');
-					imageContainer.className = 'group relative overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105';
-
-					imageContainer.innerHTML = `
-                        <picture>
-                            <source type="image/webp" srcset="${webpPath}" />
-                            <img src="${fallbackPath}" 
-                                 alt="${baseName}" 
-                                 loading="lazy" 
-                                 decoding="async"
-                                 class="w-full h-auto object-cover aspect-[3/4]" />
-                        </picture>
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-                    `;
-
-					// Click para abrir lightbox
-					imageContainer.addEventListener('click', () => {
-						openLightbox(fallbackPath);
-					});
-
-					gallery.appendChild(imageContainer);
-				});
-			} catch (error) {
-				console.error('Error al cargar las imágenes:', error);
-			}
-		}
-
-		// Lightbox
-		const lightbox = document.getElementById('lightbox');
-		const lightboxImg = document.getElementById('lightbox-img');
-		const closeLightbox = document.getElementById('close-lightbox');
-
-		function openLightbox(imageSrc) {
-			lightboxImg.src = imageSrc;
-			lightbox.classList.remove('hidden');
-			lightbox.classList.add('flex');
-			document.body.style.overflow = 'hidden';
-		}
-
-		function closeLightboxFunc() {
-			lightbox.classList.add('hidden');
-			lightbox.classList.remove('flex');
-			lightboxImg.src = '';
-			document.body.style.overflow = '';
-		}
-
-		closeLightbox.addEventListener('click', closeLightboxFunc);
-		lightbox.addEventListener('click', (e) => {
-			if (e.target === lightbox) {
-				closeLightboxFunc();
-			}
-		});
-
-		document.addEventListener('keydown', (e) => {
-			if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-				closeLightboxFunc();
-			}
-		});
-
-		// Cargar galería al cargar la página
-		document.addEventListener('DOMContentLoaded', loadGallery);
-	</script>
+    <script src="js/main.js" defer></script>
 
 </body>
 

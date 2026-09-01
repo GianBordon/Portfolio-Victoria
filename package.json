@@ -1,12 +1,9 @@
 {
   "name": "portfolio-victoria",
   "version": "1.0.0",
-  "main": "tailwind.config.js",
   "scripts": {
     "build:styles": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
-    "images:webp": "node ./scripts/convert-to-webp.mjs",
     "optimize": "node scripts/optimize-images.js",
-    "cleanup-check": "node scripts/cleanup-check.js",
     "build": "echo 'Static site - no build needed'"
   },
   "author": "",
@@ -14,8 +11,7 @@
   "description": "",
   "dependencies": {
     "@midudev/tailwind-animations": "^0.2.0",
-    "@tailwindcss/cli": "^4.1.11",
-    "flowbite": "^3.1.2"
+    "@tailwindcss/cli": "^4.1.11"
   },
   "devDependencies": {
     "sharp": "^0.33.0"
