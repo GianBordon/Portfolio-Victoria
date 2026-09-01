@@ -4,7 +4,7 @@
 
 > **[Ver sitio en producción](https://porfoliovictoriazitta.netlify.app/)**
 
-Este es un **portfolio web profesional** desarrollado para **Victoria Provisionato Zitta**, una Fashion Stylist. El sitio web funciona como una galería digital minimalista y elegante para mostrar su trabajo en tres categorías principales: **Estilismo**, **Editorial** y **Ecommerce**.
+Este es un **portfolio web profesional** desarrollado para **Victoria Provisionato Zitta**, una Fashion Stylist. El sitio web funciona como una galería digital minimalista y elegante para mostrar su trabajo en **cuatro categorías principales**: **Estilismo**, **Editorial**, **Ecommerce** y **Backstage**.
 
 ---
 
@@ -16,6 +16,7 @@ El objetivo principal es ofrecer una experiencia visual inmersiva donde las imá
 1.  **Estilismo** - Trabajos de estilismo general.
 2.  **Editorial** - Producciones editoriales para revistas/medios.
 3.  **Ecommerce** - Trabajos para comercio electrónico.
+4.  **Backstage** - Momentos tras la cámara y entre bastidores.
 
 ---
 
@@ -34,7 +35,7 @@ El objetivo principal es ofrecer una experiencia visual inmersiva donde las imá
 
 ---
 
-## � **Estructura del Proyecto**
+## 📁 **Estructura del Proyecto**
 
 ```bash
 Portfolio-Victoria/
@@ -45,20 +46,30 @@ Portfolio-Victoria/
 ├── data/
 │   └── images.json      # Base de datos JSON de la galería
 │
-├── js/                  # Scripts lógicos (no usados actualmente, lógica inline)
+├── js/
+│   └── main.js          # Lógica compartida: menú, galería y lightbox
 │
-├── node_modules/        # Dependencias NPM
+├── public/
+│   └── images/
+│       └── optimized/   # WebP responsivos (400/800/1600w) por categoría
+│
+├── scripts/             # Utilidades (optimize-images)
 │
 ├── home.html            # Landing page (Portada)
 ├── estilismo.html       # Galería principal de Estilismo
 ├── editorial.html       # Galería de Editorial
 ├── ecommerce.html       # Galería de Ecommerce
+├── backstage.html       # Galería de Backstage
 ├── contact.html         # Página de Contacto
+├── project.html         # Página de detalle de proyecto (lightbox)
 │
-├── input.css            # CSS fuente para Tailwind
+├── input.css            # CSS fuente para Tailwind (tokens de tema)
 ├── output.css           # CSS compilado y minificado
 │
-├── tailwind.config.js   # Configuración de Tailwind
+├── robots.txt           # Configuración de rastreo SEO
+├── sitemap.xml          # Sitemap de todas las páginas
+│
+├── netlify.toml         # Configuración de despliegue
 ├── package.json         # Dependencias y scripts
 └── README.md            # Documentación del proyecto
 ```
@@ -70,16 +81,23 @@ Portfolio-Victoria/
 ### **1. Galería Dinámica (JSON)**
 El contenido de las galerías se carga dinámicamente desde un archivo `data/images.json`. Esto permite actualizar las imágenes fácilmente sin modificar el HTML.
 
--   **Carga:** JavaScript lee el JSON y detecta la página actual.
--   **Renderizado:** Genera elementos `<picture>` optimizados.
--   **Animación:** Usa `IntersectionObserver` para mostrar las imágenes con un efecto _fade-in_ al hacer scroll.
+-   **Carga:** `js/main.js` lee el JSON y detecta la categoría mediante el atributo `data-category` de la galería.
+-   **Renderizado:** Genera elementos `<picture>` con `srcset` responsivo (WebP 400/800/1600w) y fallback a JPG.
+-   **Columnas:** Grid **1 columna (mobile) → 2 (md) → 3 (lg)** para las cards de categorías, dentro de un contenedor centrado de 10 columnas. Cada card muestra solo la categoría y el número de fotos.
+-   **Animación:** Usa `IntersectionObserver` para mostrar las imágenes con un efecto _fade-in-up_ al hacer scroll.
 
-### **2. Sistema Lightbox**
-Permite ver las imágenes en pantalla completa con alta calidad.
+### **2. Página de detalle (project.html)**
+-   Cada proyecto (ej. `project.html?id=estilismo-2&category=estilismo`) se carga desde el JSON con **fotos siempre a color** (ningún filtro B/N).
+-   Galería en **2 columnas con filas alternadas**: cada par de fotos rota 180º al pasar de fila (grande-izquierda/chica-derecha y viceversa).
+-   Sistema **Lightbox** para ver las imágenes en pantalla completa.
 -   **Navegación:** Cierre con botón, tecla `ESC` o click fuera de la imagen.
 -   **Transiciones:** Animaciones suaves de apertura y cierre.
 
-### **3. Optimización**
+### **3. Color / Blanco y Negro**
+-   Por defecto las fotos se muestran en **blanco y negro** y **colorean al hover**. Se mantiene en `home` y en las páginas de categorías.
+-   La página de detalle (`project.html`) anula ese efecto vía `body.project-page` y muestra las fotos siempre en color.
+
+### **4. Optimización**
 -   **Formato WebP:** Reducción de tamaño (~30%) manteniendo calidad.
 -   **Lazy Loading:** Solo carga las imágenes visibles para mejorar el tiempo de carga inicial.
 -   **Estilos Críticos:** Tailwind genera un CSS purgado que solo incluye las clases utilizadas.
@@ -115,8 +133,10 @@ Si deseas ejecutar este proyecto localmente:
 ## 🎨 **Diseño y Estilo**
 
 -   **Paleta:** Blanco y Negro (Minimalismo) + Acento **Rosa Fucsia (`#ff1493`)**.
--   **Tipografía:** `Playfair Display` (elegancia editorial) + `Sans-Serif` (legibilidad).
--   **Responsive:** Diseño _mobile-first_ con menú hamburguesa fullscreen en dispositivos móviles.
+-   **Tipografía:** `Bodoni Moda` (serif editorial) + `Hanken Grotesk` (sans-serif).
+-   **Home:** Bento grid **3 filas × 2 columnas** con las 4 categorías.
+-   **Contacto:** Sin formulario; dos columnas con los datos a la izquierda y una foto a la derecha.
+-   **Responsive:** Diseño _mobile-first_ con menú hamburguesa fullscreen en dispositivos móviles y grids de cards **1 → 2 → 3 columnas**.
 
 ---
 

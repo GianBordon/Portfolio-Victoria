@@ -6,202 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="theme-color" content="#f9f9f9">
     <title>Contacto - Victoria Provisionato Zitta</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Contacto - Victoria Provisionato Zitta, Fashion Stylist. Madrid, España.">
+    <meta name="description" content="Ponte en contacto con Victoria Provisionato Zitta, Fashion Stylist. Madrid, España. Estilismo, editoriales y campañas comerciales.">
+    <meta name="author" content="Victoria Provisionato Zitta">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="https://porfoliovictoriazitta.netlify.app/contact.html">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Victoria Provisionato Zitta">
     <meta property="og:title" content="Contacto - Victoria Provisionato Zitta">
     <meta property="og:description" content="Ponte en contacto con Victoria Provisionato Zitta, Fashion Stylist.">
     <meta property="og:url" content="https://porfoliovictoriazitta.netlify.app/contact.html">
     <meta property="og:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto - Victoria Provisionato Zitta">
+    <meta name="twitter:description" content="Ponte en contacto con Victoria Provisionato Zitta, Fashion Stylist.">
+    <meta name="twitter:image" content="https://porfoliovictoriazitta.netlify.app/assets/img/preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:wght@100..900&display=swap"
         rel="stylesheet">
 </head>
 
-<body class="bg-white text-black font-sans">
+<body class="bg-background text-primary antialiased min-h-screen flex flex-col overflow-x-hidden">
 
-    <!-- Navbar Transparente (Coherencia con otras páginas) -->
-    <nav class="w-full bg-transparent">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Navbar -->
+    <nav class="w-full sticky top-0 z-50 bg-background border-b border-primary">
+        <div class="flex justify-between items-center px-6 md:px-20 py-6">
+            <a href="home.html"
+                class="font-bodoni text-xl md:text-2xl tracking-tighter text-primary">VICTORIA ZITTA</a>
 
-            <!-- Botón Hamburguesa (Mobile/Tablet) -->
-            <button id="menu-toggle" class="lg:hidden text-black focus:outline-none z-50">
-                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                    </path>
-                </svg>
-            </button>
-
-            <!-- Logo Centrado (Mobile/Tablet) / Derecha (Desktop) -->
-            <div
-                class="lg:order-2 absolute left-1/2 transform -translate-x-1/2 lg:relative lg:left-0 lg:transform-none">
-                <a href="home.html"
-                    class="text-black text-2xl md:text-3xl font-playfair font-bold tracking-wider uppercase transition-colors duration-300 hover:text-[#ff1493] whitespace-nowrap">Victoria
-                    Zitta</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="estilismo.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">STYLING</a>
+                <a href="editorial.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">EDITORIAL</a>
+                <a href="ecommerce.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">E-COMMERCE</a>
+                <a href="backstage.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">BACKSTAGE</a>
             </div>
 
-            <!-- Navegación Desktop -->
-            <ul class="hidden lg:flex items-center gap-6 md:gap-10">
-                <li>
-                    <a href="estilismo.html"
-                        class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">STYLING</a>
-                </li>
-                <li>
-                    <a href="editorial.html"
-                        class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">EDITORIAL</a>
-                </li>
-                <li>
-                    <a href="ecommerce.html"
-                        class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">E-COMMERCE</a>
-                </li>
-                <li>
-                    <a href="backstage.html"
-                        class="text-black text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">BACKSTAGE</a>
-                </li>
-            </ul>
+            <div class="hidden md:block">
+                <a href="contact.html"
+                    class="text-nav-link font-semibold uppercase tracking-widest text-primary border-b-2 border-primary pb-1">CONTACT</a>
+            </div>
 
+            <button id="menu-toggle" class="md:hidden text-primary focus:outline-none z-50">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
         </div>
     </nav>
 
-    <!-- Menú Mobile/Tablet Fullscreen -->
+    <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="fixed inset-0 bg-black z-40 flex items-center justify-center transform translate-x-full transition-transform duration-300 ease-in-out">
+        class="fixed inset-0 bg-ink-black z-40 flex items-center justify-center transform translate-x-full transition-transform duration-300 ease-in-out">
         <ul class="flex flex-col items-center gap-8">
-            <li>
-                <a href="estilismo.html"
-                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">STYLING</a>
-            </li>
-            <li>
-                <a href="editorial.html"
-                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">EDITORIAL</a>
-            </li>
-            <li>
-                <a href="ecommerce.html"
-                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">ECOMMERCE</a>
-            </li>
-            <li>
-                <a href="backstage.html"
-                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">BACKSTAGE</a> 
-            </li>
+            <li><a href="estilismo.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">STYLING</a></li>
+            <li><a href="editorial.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">EDITORIAL</a></li>
+            <li><a href="ecommerce.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">E-COMMERCE</a></li>
+            <li><a href="backstage.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">BACKSTAGE</a></li>
+            <li><a href="contact.html"
+                    class="menu-link text-white text-3xl font-bold uppercase transition-colors duration-300 hover:text-accent">CONTACT</a></li>
         </ul>
     </div>
 
-    <!-- Contenido Principal: Contacto -->
-    <main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+    <main class="flex-grow w-full px-6 md:px-20 py-12 md:py-24">
 
-        <div class="text-center mb-16">
-
-            <!-- Datos de Contacto Directo -->
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-12">
-                <a href="mailto:victoriaprovzitta@gmail.com"
-                    class="group flex flex-col items-center gap-2 transition-colors duration-300">
-                    <span class="text-sm font-bold uppercase text-gray-500 group-hover:text-[#ff1493]">Email</span>
-                    <span
-                        class="text-xl md:text-2xl font-playfair font-bold hover:text-[#ff1493] transition-colors">victoriaprovzitta@gmail.com</span>
-                </a>
-
-                <div class="flex flex-col items-center gap-2">
-                    <span class="text-sm font-bold uppercase text-gray-500">Ubicación</span>
-                    <span class="text-xl md:text-2xl font-playfair font-bold">Madrid, Spain</span>
-                </div>
-
-                <a href="https://wa.link/fabe0e" target="_blank"
-                    class="group flex flex-col items-center gap-2 transition-colors duration-300">
-                    <span class="text-sm font-bold uppercase text-gray-500 group-hover:text-[#ff1493]">WhatsApp</span>
-                    <span class="text-xl md:text-2xl font-playfair font-bold hover:text-[#ff1493] transition-colors">+34
-                        614 35 08 71</span>
-                </a>
-            </div>
-
-            <a href="https://instagram.com/victoriaa.p.zitta" target="_blank"
-                class="inline-block border-2 border-black px-8 py-3 text-lg font-bold uppercase tracking-widest hover:text-white transition-all duration-300 hover:border-[#ff1493] hover:bg-[#ff1493]">
-                Sígueme en Instagram
-            </a>
+        <!-- Massive Typography Header -->
+        <div class="w-full mb-16 md:mb-24">
+            <h1 class="font-bodoni text-display-lg-mobile md:text-display-lg leading-none uppercase text-primary">CONTACT</h1>
         </div>
 
+        <!-- Contact Grid: datos a la izquierda, foto a la derecha -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
+            <!-- Left Column: Info -->
+            <div class="md:col-span-5 flex flex-col gap-10">
+                <p class="text-body-md text-primary max-w-sm">
+                    Disponible para estilismo editorial, campañas comerciales y consultas personales en todo el mundo. Para consultas profesionales, escribe un correo.
+                </p>
 
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <span class="block text-label-caps font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-2">EMAIL</span>
+                        <a class="text-body-md text-primary hover:opacity-70 transition-opacity border-b border-primary pb-1"
+                            href="mailto:victoriaprovzitta@gmail.com">victoriaprovzitta@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="block text-label-caps font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-2">UBICACIÓN</span>
+                        <p class="text-body-md text-primary">Madrid, Spain</p>
+                    </div>
+                    <div>
+                        <span class="block text-label-caps font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-2">WHATSAPP</span>
+                        <a class="text-body-md text-primary hover:opacity-70 transition-opacity border-b border-primary pb-1"
+                            href="https://wa.link/fabe0e" target="_blank">+34 614 35 08 71</a>
+                    </div>
+                </div>
+
+                <div class="flex gap-8 pt-8 border-t border-primary/20">
+                    <a href="https://instagram.com/victoriaa.p.zitta" target="_blank"
+                        class="text-label-caps font-bold uppercase tracking-[0.2em] text-primary hover:tracking-widest transition-all duration-500">INSTAGRAM</a>
+                </div>
+            </div>
+
+            <!-- Right Column: Accent image -->
+            <div class="md:col-span-6 md:col-start-7">
+                <div class="w-full aspect-[3/4] relative border border-primary overflow-hidden">
+                    <picture class="block h-full w-full">
+                        <source type="image/webp"
+                            srcset="public/images/optimized/estilismo/foto76-400w.webp 400w, public/images/optimized/estilismo/foto76-800w.webp 800w, public/images/optimized/estilismo/foto76-1600w.webp 1600w"
+                            sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, s">
+                        <img src="assets/img/foto76.jpg" alt="Victoria Zitta — Fashion Stylist"
+                            class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+            </div>
+        </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="w-full bg-black py-6 mt-12">
-        <div class="max-w-7xl mx-auto px-6">
-            <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10">
-                <li>
-                    <a href="https://instagram.com/victoriaa.p.zitta" target="_blank"
-                        class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">INSTAGRAM</a>
-                </li>
-                <li>
-                    <a href="contact.html"
-                        class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="mailto:victoriaprovzitta@gmail.com"
-                        class="text-white text-sm md:text-base font-bold uppercase transition-colors duration-300 hover:text-[#ff1493]">MAIL</a>
-                </li>
-            </ul>
+    <footer class="w-full bg-editorial-cream border-t border-primary px-6 md:px-20 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-6">
+            <div class="font-bodoni text-2xl text-primary">VICTORIA ZITTA</div>
+            <div class="flex flex-wrap gap-6 md:gap-12 items-center">
+                <a href="https://instagram.com/victoriaa.p.zitta" target="_blank"
+                    class="text-label-caps font-bold uppercase tracking-[0.2em] text-secondary hover:tracking-widest transition-all duration-500">INSTAGRAM</a>
+                <a href="contact.html"
+                    class="text-label-caps font-bold uppercase tracking-[0.2em] text-primary">CONTACT</a>
+                <a href="mailto:victoriaprovzitta@gmail.com"
+                    class="text-label-caps font-bold uppercase tracking-[0.2em] text-secondary hover:tracking-widest transition-all duration-500">MAIL</a>
+            </div>
+            <div class="text-sm text-primary mt-4 md:mt-0">
+                &copy; 2026 VICTORIA ZITTA. ALL RIGHTS RESERVED.
+            </div>
         </div>
     </footer>
 
-    <!-- JavaScript para Menú -->
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
-        const menuLinks = document.querySelectorAll('.menu-link');
-
-        menuToggle.addEventListener('click', () => {
-            const isOpen = mobileMenu.classList.contains('translate-x-0');
-
-            if (isOpen) {
-                mobileMenu.classList.remove('translate-x-0');
-                mobileMenu.classList.add('translate-x-full');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-                document.body.style.overflow = '';
-
-                // Volver a negro al cerrar
-                menuToggle.classList.remove('text-white');
-                menuToggle.classList.add('text-black');
-            } else {
-                mobileMenu.classList.remove('translate-x-full');
-                mobileMenu.classList.add('translate-x-0');
-                hamburgerIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-
-                // Cambiar a blanco al abrir
-                menuToggle.classList.remove('text-black');
-                menuToggle.classList.add('text-white');
-            }
-        });
-
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('translate-x-0');
-                mobileMenu.classList.add('translate-x-full');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-                document.body.style.overflow = '';
-
-                // Volver a negro al cerrar
-                menuToggle.classList.remove('text-white');
-                menuToggle.classList.add('text-black');
-            });
-        });
-    </script>
+    <script src="js/main.js" defer></script>
 
 </body>
 
