@@ -11,7 +11,7 @@ const IMAGES_DATA = require('../data/images.json');
 async function optimizeImages() {
   console.log('🔍 Buscando imágenes en:', INPUT_DIR);
   
-  const categories = Object.keys(IMAGES_DATA.categories || {});
+  const categories = Object.keys(IMAGES_DATA);
   
   for (const category of categories) {
     console.log(`\n📂 Procesando categoría: ${category}`);
@@ -19,16 +19,11 @@ async function optimizeImages() {
     const outputPath = path.join(OUTPUT_DIR, category);
     await fs.mkdir(outputPath, { recursive: true });
     
-    const catData = IMAGES_DATA.categories[category];
-    const names = new Set();
-    (catData.projects || []).forEach((project) => {
-      (project.images || []).forEach((img) => {
-        const name = typeof img === 'string' ? img : img.name;
-        if (name) names.add(name);
-      });
-    });
+    const images = IMAGES_DATA[category];
     
-    for (const imageName of names) {
+    for (const imageData of images) {
+      const imageName = typeof imageData === 'string' ? imageData : imageData.name;
+      const extension = imageData.extension || 'jpg';
       
       // Buscar la imagen con diferentes extensiones
       const possibleExtensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG'];

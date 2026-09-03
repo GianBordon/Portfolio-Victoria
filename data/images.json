@@ -1,219 +1,107 @@
 {
-  "categories": {
-    "estilismo": {
-      "title": "ESTILISMO",
-      "projects": [
-        {
-          "id": "estilismo-1",
-          "title": "Proyecto 1",
-          "cover": "foto6",
-          "images": [
-            { "name": "foto6", "sizes": [400, 800, 1600] },
-            { "name": "foto7", "sizes": [400, 800, 1600] },
-            { "name": "foto9", "sizes": [400, 800, 1600] },
-            { "name": "foto10", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "estilismo-2",
-          "title": "Proyecto 2",
-          "cover": "foto11",
-          "images": [
-            { "name": "foto11", "sizes": [400, 800, 1600] },
-            { "name": "foto12", "sizes": [400, 800, 1600] },
-            { "name": "foto13", "sizes": [400, 800, 1600] },
-            { "name": "foto16", "sizes": [400, 800, 1600] },
-            { "name": "foto17", "sizes": [400, 800, 1600] },
-            { "name": "foto18", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "estilismo-3",
-          "title": "Proyecto 3",
-          "cover": "foto20",
-          "images": [
-            { "name": "foto20", "sizes": [400, 800, 1600] },
-            { "name": "foto22", "sizes": [400, 800, 1600] },
-            { "name": "foto23", "sizes": [400, 800, 1600] },
-            { "name": "foto24", "sizes": [400, 800, 1600] },
-            { "name": "foto25", "sizes": [400, 800, 1600] },
-            { "name": "foto26", "sizes": [400, 800, 1600] },
-            { "name": "foto27", "sizes": [400, 800, 1600] },
-            { "name": "foto29", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "estilismo-4",
-          "title": "Proyecto 4",
-          "cover": "foto30",
-          "images": [
-            { "name": "foto30", "sizes": [400, 800, 1600] },
-            { "name": "foto31", "sizes": [400, 800, 1600] },
-            { "name": "foto32", "sizes": [400, 800, 1600] },
-            { "name": "foto33", "sizes": [400, 800, 1600] },
-            { "name": "foto34", "sizes": [400, 800, 1600] },
-            { "name": "foto35", "sizes": [400, 800, 1600] },
-            { "name": "foto36", "sizes": [400, 800, 1600] },
-            { "name": "foto37", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "estilismo-5",
-          "title": "Proyecto 5",
-          "cover": "foto43",
-          "images": [
-            { "name": "foto43", "sizes": [400, 800, 1600] },
-            { "name": "foto44", "sizes": [400, 800, 1600] },
-            { "name": "foto45", "sizes": [400, 800, 1600] },
-            { "name": "foto47", "sizes": [400, 800, 1600] },
-            { "name": "foto49", "sizes": [400, 800, 1600] },
-            { "name": "foto50", "sizes": [400, 800, 1600] },
-            { "name": "foto52", "sizes": [400, 800, 1600] },
-            { "name": "foto53", "sizes": [400, 800, 1600] },
-            { "name": "foto54", "sizes": [400, 800, 1600] },
-            { "name": "foto55", "sizes": [400, 800, 1600] },
-            { "name": "foto56", "sizes": [400, 800, 1600] },
-            { "name": "foto57", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "estilismo-6",
-          "title": "Proyecto 6",
-          "cover": "foto58",
-          "images": [
-            { "name": "foto58", "sizes": [400, 800, 1600] },
-            { "name": "foto65", "sizes": [400, 800, 1600] },
-            { "name": "foto73", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "estilismo-7",
-          "title": "Proyecto 7",
-          "cover": "foto76",
-          "images": [
-            { "name": "foto76", "sizes": [400, 800, 1600] },
-            { "name": "foto77", "sizes": [400, 800, 1600] },
-            { "name": "foto78", "sizes": [400, 800, 1600] },
-            { "name": "foto79", "sizes": [400, 800, 1600] },
-            { "name": "foto80", "sizes": [400, 800, 1600] }
-          ]
-        }
-      ]
-    },
-    "editorial": {
-      "title": "EDITORIAL",
-      "projects": [
-        {
-          "id": "editorial-1",
-          "title": "Proyecto 1",
-          "cover": "foto1",
-          "images": [
-            { "name": "foto1", "sizes": [400, 800, 1600] },
-            { "name": "foto2", "sizes": [400, 800, 1600] },
-            { "name": "foto3", "sizes": [400, 800, 1600] },
-            { "name": "foto4", "sizes": [400, 800, 1600] }
-          ]
-        }
-      ]
-    },
-    "ecommerce": {
-      "title": "E-COMMERCE",
-      "projects": [
-        {
-          "id": "ecommerce-1",
-          "title": "Proyecto 1",
-          "cover": "foto38",
-          "images": [
-            { "name": "foto38", "sizes": [400, 800, 1600] },
-            { "name": "foto39", "sizes": [400, 800, 1600] },
-            { "name": "foto40", "sizes": [400, 800, 1600] },
-            { "name": "foto41", "sizes": [400, 800, 1600] },
-            { "name": "foto42", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "ecommerce-2",
-          "title": "Proyecto 2",
-          "cover": "foto58",
-          "images": [
-            { "name": "foto58", "sizes": [400, 800, 1600] },
-            { "name": "foto59", "sizes": [400, 800, 1600] },
-            { "name": "foto60", "sizes": [400, 800, 1600] },
-            { "name": "foto61", "sizes": [400, 800, 1600] },
-            { "name": "foto62", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "ecommerce-3",
-          "title": "Proyecto 3",
-          "cover": "foto63",
-          "images": [
-            { "name": "foto63", "sizes": [400, 800, 1600] },
-            { "name": "foto64", "sizes": [400, 800, 1600] },
-            { "name": "foto65", "sizes": [400, 800, 1600] },
-            { "name": "foto66", "sizes": [400, 800, 1600] },
-            { "name": "foto67", "sizes": [400, 800, 1600] },
-            { "name": "foto68", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "ecommerce-4",
-          "title": "Proyecto 4",
-          "cover": "foto69",
-          "images": [
-            { "name": "foto69", "sizes": [400, 800, 1600] },
-            { "name": "foto70", "sizes": [400, 800, 1600] },
-            { "name": "foto71", "sizes": [400, 800, 1600] },
-            { "name": "foto72", "sizes": [400, 800, 1600] },
-            { "name": "foto73", "sizes": [400, 800, 1600] },
-            { "name": "foto74", "sizes": [400, 800, 1600] },
-            { "name": "foto75", "sizes": [400, 800, 1600] }
-          ]
-        }
-      ]
-    },
-    "backstage": {
-      "title": "BACKSTAGE",
-      "projects": [
-        {
-          "id": "backstage-1",
-          "title": "Proyecto 1",
-          "cover": "foto81",
-          "images": [
-            { "name": "foto81", "sizes": [400, 800, 1600] },
-            { "name": "foto82", "sizes": [400, 800, 1600] },
-            { "name": "foto83", "sizes": [400, 800, 1600] },
-            { "name": "foto84", "sizes": [400, 800, 1600] },
-            { "name": "foto85", "sizes": [400, 800, 1600] },
-            { "name": "foto86", "sizes": [400, 800, 1600] },
-            { "name": "foto87", "sizes": [400, 800, 1600] },
-            { "name": "foto88", "sizes": [400, 800, 1600] },
-            { "name": "foto89", "sizes": [400, 800, 1600] }
-          ]
-        },
-        {
-          "id": "backstage-2",
-          "title": "Proyecto 2",
-          "cover": "foto90",
-          "images": [
-            { "name": "foto90", "sizes": [400, 800, 1600] },
-            { "name": "foto91", "sizes": [400, 800, 1600] },
-            { "name": "foto92", "sizes": [400, 800, 1600] },
-            { "name": "foto93", "sizes": [400, 800, 1600] },
-            { "name": "foto94", "sizes": [400, 800, 1600] },
-            { "name": "foto95", "sizes": [400, 800, 1600] },
-            { "name": "foto96", "sizes": [400, 800, 1600] },
-            { "name": "foto97", "sizes": [400, 800, 1600] },
-            { "name": "foto98", "sizes": [400, 800, 1600] },
-            { "name": "foto99", "sizes": [400, 800, 1600] },
-            { "name": "foto100", "sizes": [400, 800, 1600] },
-            { "name": "foto101", "sizes": [400, 800, 1600] },
-            { "name": "foto102", "sizes": [400, 800, 1600] },
-            { "name": "foto103", "sizes": [400, 800, 1600] },
-            { "name": "foto104", "sizes": [400, 800, 1600] }
-          ]
-        }
-      ]
-    }
-  }
+  "estilismo": [
+    { "name": "foto76", "sizes": [400, 800, 1600] },
+    { "name": "foto77", "sizes": [400, 800, 1600] },
+    { "name": "foto78", "sizes": [400, 800, 1600] },
+    { "name": "foto79", "sizes": [400, 800, 1600] },
+    { "name": "foto80", "sizes": [400, 800, 1600] },
+    { "name": "foto58", "sizes": [400, 800, 1600] },
+    { "name": "foto65", "sizes": [400, 800, 1600] },
+    { "name": "foto73", "sizes": [400, 800, 1600] },
+    { "name": "foto57", "sizes": [400, 800, 1600] },
+    { "name": "foto56", "sizes": [400, 800, 1600] },
+    { "name": "foto55", "sizes": [400, 800, 1600] },
+    { "name": "foto54", "sizes": [400, 800, 1600] },
+    { "name": "foto53", "sizes": [400, 800, 1600] },
+    { "name": "foto52", "sizes": [400, 800, 1600] },
+    { "name": "foto50", "sizes": [400, 800, 1600] },
+    { "name": "foto49", "sizes": [400, 800, 1600] },
+    { "name": "foto47", "sizes": [400, 800, 1600] },
+    { "name": "foto45", "sizes": [400, 800, 1600] },
+    { "name": "foto44", "sizes": [400, 800, 1600] },
+    { "name": "foto43", "sizes": [400, 800, 1600] },
+    { "name": "foto37", "sizes": [400, 800, 1600] },
+    { "name": "foto36", "sizes": [400, 800, 1600] },
+    { "name": "foto35", "sizes": [400, 800, 1600] },
+    { "name": "foto34", "sizes": [400, 800, 1600] },
+    { "name": "foto33", "sizes": [400, 800, 1600] },
+    { "name": "foto32", "sizes": [400, 800, 1600] },
+    { "name": "foto31", "sizes": [400, 800, 1600] },
+    { "name": "foto30", "sizes": [400, 800, 1600] },
+    { "name": "foto29", "sizes": [400, 800, 1600] },
+    { "name": "foto27", "sizes": [400, 800, 1600] },
+    { "name": "foto22", "sizes": [400, 800, 1600] },
+    { "name": "foto24", "sizes": [400, 800, 1600] },
+    { "name": "foto23", "sizes": [400, 800, 1600] },
+    { "name": "foto26", "sizes": [400, 800, 1600] },
+    { "name": "foto25", "sizes": [400, 800, 1600] },
+    { "name": "foto20", "sizes": [400, 800, 1600] },
+    { "name": "foto18", "sizes": [400, 800, 1600] },
+    { "name": "foto17", "sizes": [400, 800, 1600] },
+    { "name": "foto16", "sizes": [400, 800, 1600] },
+    { "name": "foto13", "sizes": [400, 800, 1600] },
+    { "name": "foto12", "sizes": [400, 800, 1600] },
+    { "name": "foto11", "sizes": [400, 800, 1600] },
+    { "name": "foto10", "sizes": [400, 800, 1600] },
+    { "name": "foto9", "sizes": [400, 800, 1600] },
+    { "name": "foto7", "sizes": [400, 800, 1600] },
+    { "name": "foto6", "sizes": [400, 800, 1600] }
+  ],
+  "editorial": [
+    { "name": "Foto1", "sizes": [400, 800, 1600] },
+    { "name": "foto2", "sizes": [400, 800, 1600] },
+    { "name": "foto3", "sizes": [400, 800, 1600] },
+    { "name": "foto4", "sizes": [400, 800, 1600] }
+  ],
+  "ecommerce": [
+    { "name": "foto58", "sizes": [400, 800, 1600] },
+    { "name": "foto59", "sizes": [400, 800, 1600] },
+    { "name": "foto60", "sizes": [400, 800, 1600] },
+    { "name": "foto61", "sizes": [400, 800, 1600] },
+    { "name": "foto62", "sizes": [400, 800, 1600] },
+    { "name": "foto63", "sizes": [400, 800, 1600] },
+    { "name": "foto64", "sizes": [400, 800, 1600] },
+    { "name": "foto65", "sizes": [400, 800, 1600] },
+    { "name": "foto66", "sizes": [400, 800, 1600] },
+    { "name": "foto67", "sizes": [400, 800, 1600] },
+    { "name": "foto68", "sizes": [400, 800, 1600] },
+    { "name": "foto69", "sizes": [400, 800, 1600] },
+    { "name": "foto70", "sizes": [400, 800, 1600] },
+    { "name": "foto71", "sizes": [400, 800, 1600] },
+    { "name": "foto72", "sizes": [400, 800, 1600] },
+    { "name": "foto73", "sizes": [400, 800, 1600] },
+    { "name": "foto74", "sizes": [400, 800, 1600] },
+    { "name": "foto75", "sizes": [400, 800, 1600] },
+    { "name": "foto38", "sizes": [400, 800, 1600] },
+    { "name": "foto39", "sizes": [400, 800, 1600] },
+    { "name": "foto40", "sizes": [400, 800, 1600] },
+    { "name": "foto41", "sizes": [400, 800, 1600] },
+    { "name": "foto42", "sizes": [400, 800, 1600] }
+  ],
+  "backstage": [
+    { "name": "foto81", "sizes": [400, 800, 1600] },
+    { "name": "foto82", "sizes": [400, 800, 1600] },
+    { "name": "foto83", "sizes": [400, 800, 1600] },
+    { "name": "foto84", "sizes": [400, 800, 1600] },
+    { "name": "foto85", "sizes": [400, 800, 1600] },
+    { "name": "foto86", "sizes": [400, 800, 1600] },
+    { "name": "foto87", "sizes": [400, 800, 1600] },
+    { "name": "foto88", "sizes": [400, 800, 1600] },
+    { "name": "foto89", "sizes": [400, 800, 1600] },
+    { "name": "foto90", "sizes": [400, 800, 1600] },
+    { "name": "foto91", "sizes": [400, 800, 1600] },
+    { "name": "foto92", "sizes": [400, 800, 1600] },
+    { "name": "foto93", "sizes": [400, 800, 1600] },
+    { "name": "foto94", "sizes": [400, 800, 1600] },
+    { "name": "foto95", "sizes": [400, 800, 1600] },
+    { "name": "foto96", "sizes": [400, 800, 1600] },
+    { "name": "foto97", "sizes": [400, 800, 1600] },
+    { "name": "foto98", "sizes": [400, 800, 1600] },
+    { "name": "foto99", "sizes": [400, 800, 1600] },
+    { "name": "foto100", "sizes": [400, 800, 1600] },
+    { "name": "foto101", "sizes": [400, 800, 1600] },
+    { "name": "foto102", "sizes": [400, 800, 1600] },
+    { "name": "foto103", "sizes": [400, 800, 1600] },
+    { "name": "foto104", "sizes": [400, 800, 1600] }
+  ]
 }
