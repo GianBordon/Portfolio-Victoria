@@ -1,84 +1,16 @@
 @import "tailwindcss";
 @plugin "@midudev/tailwind-animations";
+@plugin "flowbite/plugin";
 
-@theme {
-    --color-accent: #ff1493;
-    --color-primary: #000000;
-    --color-on-primary: #ffffff;
-    --color-ink-black: #0A0A0A;
-    --color-editorial-cream: #F9F8F3;
-    --color-background: #f9f9f9;
-    --color-soft-gray: #E5E5E5;
-    --color-surface: #f9f9f9;
-    --color-on-surface-variant: #4c4546;
-    --color-surface-container: #eeeeee;
-    --color-surface-dim: #dadada;
-    --color-outline: #7e7576;
-    --color-outline-variant: #cfc4c5;
-    --color-secondary: #5e5f5b;
-
-    --font-bodoni: "Bodoni Moda", serif;
-    --font-hanken: "Hanken Grotesk", sans-serif;
-    --font-display-lg: "Bodoni Moda", serif;
-    --font-headline-xl: "Bodoni Moda", serif;
-    --font-headline-md: "Bodoni Moda", serif;
-    --font-nav-link: "Hanken Grotesk", sans-serif;
-    --font-body-md: "Hanken Grotesk", sans-serif;
-    --font-body-lg: "Hanken Grotesk", sans-serif;
-    --font-label-caps: "Hanken Grotesk", sans-serif;
-
-    --text-display-lg: 120px;
-    --text-display-lg-mobile: 56px;
-    --text-headline-xl: 64px;
-    --text-headline-xl-mobile: 40px;
-    --text-headline-md: 32px;
-    --text-nav-link: 14px;
-    --text-body-md: 16px;
-    --text-body-lg: 18px;
-    --text-label-caps: 12px;
-
-    --spacing-page-margin-desktop: 80px;
-    --spacing-page-margin-mobile: 24px;
-    --spacing-gutter: 32px;
-    --spacing-section-gap: 160px;
-    --spacing-element-gap: 24px;
+@font-face{
+    font-family: 'LibertinusSans';
+    src: url(assets/fonts/LibertinusSans-Regular.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
-@layer base {
-    * {
-        border-radius: 0 !important;
-    }
-
-    body {
-        background-color: var(--color-surface);
-        color: var(--color-ink-black);
-        font-family: var(--font-hanken);
-    }
-
-    img {
-        filter: grayscale(100%);
-        transition: filter 0.5s ease;
-    }
-
-    img:hover {
-        filter: grayscale(0%);
-    }
-
-    /* project.html: las fotos del proyecto se muestran siempre a color, sin B/N ni revelado al hover */
-    body.project-page img,
-    body.project-page img:hover {
-        filter: grayscale(0%);
-    }
-
-    /* Páginas de categoría: las fotos se muestran a color sin efecto B/N */
-    body.category-page img,
-    body.category-page img:hover {
-        filter: grayscale(0%);
-    }
-
-    a:focus-visible,
-    button:focus-visible {
-        outline: 2px solid var(--color-accent);
-        outline-offset: 2px;
-    }
+@theme{
+    --color-hola: #40f;
+    --font-lobster: 'LibertinusSans', sans-serif
 }
